@@ -1,5 +1,8 @@
 import argparse
-import Models , LoadBatches
+import LoadBatches
+
+import Models
+from Models import VGGUnet, VGGSegnet, FCN8, FCN32
 
 
 
@@ -58,7 +61,7 @@ if len( load_weights ) > 0:
 	m.load_weights(load_weights)
 
 
-print "Model output shape" ,  m.output_shape
+print("Model output shape" ,  m.output_shape)
 
 output_height = m.outputHeight
 output_width = m.outputWidth

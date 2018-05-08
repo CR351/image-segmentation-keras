@@ -1,5 +1,9 @@
 import argparse
-import Models , LoadBatches
+import LoadBatches
+
+import Models
+from Models import VGGUnet, VGGSegnet, FCN8, FCN32
+
 from keras.models import load_model
 import glob
 import cv2
